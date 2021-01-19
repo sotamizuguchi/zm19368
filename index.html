@@ -320,15 +320,18 @@ ondblclick="sayhello();sayhello();">
  onclick="txtchange1();">
      城西大学</div>
 
-<br>
+
    <div id="image1" >
 
      <input type="button" value="画像の変更"
    onclick="imgchange1();">
-     <img src='./image/josai.png' id="logo" alt="Josai
+     <img src='0_20140709155407.jpg' id="logo" alt="Josai
     Logo"></div>
-<br>
-  
+
+    function imgchange1() {
+     document.getElementById('logo').src= 
+    './image/bulbon.gif';
+    }
 <h1>引数の練習6-10</h1>
 <form name="timer">
 <input type="button" value="スタート"
