@@ -3,5 +3,5 @@ function txtchange1() {
 }
 
 function imgchange1() {
-  document.getElementById('logo').src = './image/bulbon.jpg';
+  document.getElementById('logo').src = './image1/1217_400x400.jpg';
 }
