@@ -13,6 +13,7 @@
 <script src="ex6-8.js"></script>
 <script src="ex6-9.js"></script>
 <script src="ex6-10.js"></script>
+<script src="ex6-11.js"></script>
 
 </head>
 <body>
@@ -74,7 +75,7 @@
 </details> 
 </caption> 
 <thead>
-<tr class=“important”>長所</th><th>どこで食べるか</th><th>短所</th></tr>
+<tr><th class="important">長所</th><th>どこで食べるか</th><th>短所</th></tr>
  </thead> 
  <tbody> 
  <tr><td>ネタにこだわり、技術が素晴らしい</td><th>銀座の高級店 
@@ -92,7 +93,7 @@
 <strong>お寿司をどこで食べるか？その長所と短所</strong> 
 </caption> 
 <thead> 
-<tr><th>どこで食べるか</th><th>長所</th><th>短所
+<tr><th>どこで食べるか</th><th class="important">長所</th><th>短所
 </th></tr>
 </thead>
 <tbody> 
@@ -315,30 +316,32 @@ ondblclick="sayhello();sayhello();">
 
  <h1>JavaScriptによるページの変更69</h1>
    <div id="txt1" >
+      <input type="button" value="テキストの変更" onclick="txtchange1();">城西大学</div>
+<br>
+    <div id="image1" >
+      <input type="button" value="画像の変更" onclick="imgchange1();">
+  <img src='./image1/0_20140709155407.jpg' id="logo" alt="./image1/1217.400x400.jpg"></div>
+  <br>
 
-     <input type="button" value="テキストの変更"
- onclick="txtchange1();">
-     城西大学</div>
-
-
-   <div id="image1" >
-
-     <input type="button" value="画像の変更"
-   onclick="imgchange1();">
-     <img src='0_20140709155407.jpg' id="logo" alt="Josai
-    Logo"></div>
-
-    function imgchange1() {
-     document.getElementById('logo').src= 
-    './image/bulbon.gif';
-    }
 <h1>引数の練習6-10</h1>
-<form name="timer">
-<input type="button" value="スタート"
-onclick="startfnc()">
+<form name="timer"> 
+<input type="button" value="スタート" onclick="startfnc()">
 <br> 
 <input type="text" name="moji" size="30" value=""> 
 </form>
+<br>
+  
+<form> 
+  <input type="button" value="Timer" onclick="setTimeout('mes()',3000)"> 
+</form>
+<br>
+  <h1>タイマーイベントによる実行6-11</h1>
+<form name="timer2"> 
+<input type="button" value="スタート" onclick="hyoji2()">
+<br> 
+<input type="text" name="moji2" size="30" value=""> 
+</form>
+  <br>
 
 </body>
 </html>
